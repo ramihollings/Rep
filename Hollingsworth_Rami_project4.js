@@ -5,13 +5,20 @@ Return actual function as call
 get to know regex */
 
 // Check Phone number string
-
-
 function checkNumber(number) {numberRegex = /^\d\d\d-\d\d\d-\d\d\d\d$/;
  if(!number.match(numberRegex)) {console.log("Bad");
   return false;
  }else{ console.log ("Good")};
  return true;
 };
-
 checkNumber("123-456-7890")
+
+//Check eMail string
+
+function checkEmail(email) {emailRegex = /^\a\a\a@\b\b\b.\c\c\c$/;
+	if(!email.match(emailRegex)) {console.log("B");
+	return false;
+	}else{console.log ("G")};
+	return true;
+	};
+checkEmail(rami@us.com);
