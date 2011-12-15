@@ -16,10 +16,10 @@ checkNumber("123-456-7890")
 
 //Check eMail string
 
-function checkEmail(email) {emailRegex = ([^A-Za-z0-9_]+ @ + ([^\.A-Za-z0-9_-]) + . +([^A-Za-z0-9_]) + $);
+function checkEmail(email) {emailRegex = /^([a-zA-Z0-9])+([\.a-zA-Z0-9_-])*@([a-zA-Z0-9])+(\.[a-zA-Z0-9_-]+)+$/;
 	if(!email.match(emailRegex)) {console.log("B");
 	return false;
 	}else{console.log ("G")};
 	return true;
 	};
-checkEmail("rai@ush.com");
+checkEmail("ramihollingsworth@gmai.com");
