@@ -16,7 +16,7 @@ checkNumber("123-456-7890")
 
 //Check eMail string
 
-function checkEmail(email) {emailRegex = /^([a-zA-Z0-9])+([\.a-zA-Z0-9_-])*@([a-zA-Z0-9])+(\.[a-zA-Z0-9_-]+)+$/;
+function checkEmail(email) {emailRegex = /^([\w])+([\.\w])*@([\w])+(\.[\w-]+)+$/;
 	if(!email.match(emailRegex)) {console.log("B");
 	return false;
 	}else{console.log ("G")};
